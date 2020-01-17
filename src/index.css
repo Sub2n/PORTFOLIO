@@ -6246,7 +6246,7 @@ body#not_found .rocket .steam {
 @keyframes rotateInWord {
 0% {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(-35px);
 }
 
 100% {
@@ -6263,7 +6263,7 @@ body#not_found .rocket .steam {
 
    100% {
      opacity: 0;
-     transform: translateY(30px);
+     transform: translateY(35px);
    }
 }
 
@@ -6272,13 +6272,13 @@ body#not_found .rocket .steam {
 }
 
 .rotate-words span.rotate-in {
-  animation: rotateInWord .5s linear forwards;
-  -webkit-animation: rotateInWord .5s linear forwards;
+  animation: rotateInWord .6s linear forwards;
+  -webkit-animation: rotateInWord .6s linear forwards;
 }
 
 .rotate-words span.rotate-out {
-  animation: rotateOutWord .5s linear forwards;
-  -webkit-animation: rotateOutWord .5s linear forwards;
+  animation: rotateOutWord .6s linear forwards;
+  -webkit-animation: rotateOutWord .6s linear forwards;
 }
 
 .rotate-words span {

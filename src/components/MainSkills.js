@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import skillBackground from '../imgs/skill_background.jpg';
 
-import ReactDOM from 'react-dom';
-
 const skills = [
   { text: 'JavaScript', per: 90 },
   { text: 'TypeScript', per: 75 },
@@ -63,12 +61,19 @@ const MainSkills = () => {
         <div className="row margin100">
           <div className="small-12 medium-8 medium-centered columns center">
             <h4 className="letter-spaced margin50">SKILLS</h4>
+            <div className="font-large margin30">
+              <span className="myf-display"></span>
+            </div>
             <p>
               Angular 프레임워크와 React 라이브러리를 사용하여 웹 애플리케이션을
-              개발합니다. Open RESTful API를 사용해 화면에 지도나 동영상 등을
+              개발합니다. RESTful Open API를 사용해 화면에 지도나 동영상 등을
               보여줄 수 있습니다 (e.g. Google이나 카카오의 맵 API, Youtube API
-              등). 자바스크립트와 CSS로 동적인 효과를 구현해 부드럽고 깔끔한
-              사용자 경험을 제공하려고 노력합니다.
+              등).자바스크립트와 CSS로 애니메이션 효과를 주어 부드럽고 깔끔한
+              사용자 경험을 제공하고자 노력합니다.
+              <br />
+              소프트웨어 공학 수업을 수강해 MVC 디자인 패턴 등을 이해하고
+              있습니다. 또한 프로젝트 설계의 중요성을 알고 많은 시간을
+              투자합니다.
             </p>
           </div>
         </div>
