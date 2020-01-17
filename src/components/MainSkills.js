@@ -3,7 +3,7 @@ import React from 'react';
 // Progress Bar
 const MainSkills = () => {
   return (
-    <section className="skills">
+    <section id="skills">
       <h4>SKILLS</h4>
       <p>
         Angular 프레임워크와 React 라이브러리를 사용하여 웹 애플리케이션을

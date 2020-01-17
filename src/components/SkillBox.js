@@ -7,8 +7,9 @@ const SkillBox = ({ skills }) => {
   return (
     <Grid>
       {skills &&
-        skills.map(skill => (
+        skills.map((skill, index) => (
           <Grid.Unit
+            key={index}
             style={{ textAlign: 'center' }}
             size={{ tablet: 1 / 2, desktop: 1 / 3 }}>
             {skill}

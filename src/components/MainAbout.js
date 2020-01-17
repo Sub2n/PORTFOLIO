@@ -21,7 +21,7 @@ const computerEngineeringSkills = [
 
 const MainAbout = () => {
   return (
-    <section class="about">
+    <section id="about" className="wrap white-background">
       <div>
         <h4>ABOUT ME</h4>
         <h3>
