@@ -8,7 +8,7 @@ const SkillBox = ({ subject, skills }) => {
         subject === 'Front-End' ? 'margin50 small-wrap' : 'small-wrap'
       }>
       <div className="row">
-        <h4 className="subject letter-spaced margin50">
+        <h4 className="subject letter-spaced margin50 paddingLeft">
           <span>{subject}</span>
         </h4>
         <div className="small-12 columns">

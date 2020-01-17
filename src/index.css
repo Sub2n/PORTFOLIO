@@ -1,6 +1,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url('https://fonts.googleapis.com/css?family=Oswald:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean');
 
 html {
   font-family: sans-serif;
@@ -5006,6 +5007,10 @@ body.zh p {
   margin-bottom: 100px !important
 }
 
+.paddingLeft {
+    padding-left: .9375rem;
+}
+
 .block {
   display: block
 }
@@ -5066,7 +5071,7 @@ body.zh p {
 }
 
 .dark-background {
-  background-color: #1c1e22;
+  background-color: #343233;
   color: #6d737f
 }
 
@@ -6311,4 +6316,133 @@ body.page-loaded {
   display: inline-block;
   padding-right: 0.5em;
   background: #fff;
+}
+.timeline {
+  position: relative;
+  padding-left: 112px;
+  padding-bottom: 8px;
+}
+
+.event {
+  position: relative;
+  padding: 15px 20px;
+  margin-bottom: 2em;
+  background: #fff;
+  border: 3px solid #edf1f3;
+  border-radius: 6px;
+}
+
+.event:after,
+.event:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.event:before {
+  border-right-color: #edf1f3;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+.event:after {
+  border-right-color: #fff;
+  border-width: 10px;
+  margin-top: -10px;
+}
+.event .date {
+  position: absolute;
+  top: 45%;
+  margin-top: -24px;
+  left: -106px;
+  width: 68px;
+  line-height: 58px;
+  text-align: center;
+  background: #88c4fc;
+  display: block;
+  z-index: 120;
+  color: #fff;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.event p {
+  margin: .6em 0 .2em 0;
+  font-size: 14px;
+  letter-spacing: .02em;
+}
+
+.event h4 {
+  font-family: 'Do Hyeon',
+  sans-serif;
+}
+
+.timeline+.timeline .event:last-child p:before {
+  height: 76%;
+}
+
+.event:last-child p:before {
+  height: 125%;
+}
+
+.event p:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -72px;
+  height: 160%;
+  width: 4px;
+  background: #f4f6f7;
+}
+
+@media screen and (max-width: 767px) {
+  .timeline {
+    padding-left: 0;
+  }
+  .event h4,
+  .event h5,
+  .timeline h2 {
+    text-align: center;
+  }
+  .event {
+    padding: 16px;
+    margin-top: 104px;
+  }
+  .event:first-of-type {
+    margin-top: 116px;
+  }
+
+  .event .date {
+    top: -64px;
+    left: 50%;
+    margin-left: -32px;
+  }
+
+  .event:first-of-type .date {
+    top: -74px;
+  }
+
+  .timeline .event:last-child p:before {
+    height: 100%;
+  }
+
+  .event p:before {
+    left: 50%;
+    z-index: -1;
+  }
+
+  .event:after,
+  .event:before {
+    display: none;
+  }
 }
