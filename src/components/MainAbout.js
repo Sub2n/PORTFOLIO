@@ -79,7 +79,7 @@ const MainAbout = () => {
       <div className="margin50 small-wrap">
         <div className="row">
           <h4 className="subject letter-spaced margin50 paddingLeft">
-            <span>EDUCATION HISTORY</span>
+            <span>EDUCATION</span>
           </h4>
           <div className="columns">
             <div className="timeline">
