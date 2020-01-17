@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const MainHeader = () => {
-  useEffect(() => console.log(window), []);
   return (
     <section id="header">
       <div className="header-container full-height">
@@ -11,11 +10,13 @@ const MainHeader = () => {
         <div className="header-text middle-container">
           <div className="middle">
             <h2 className="margin100 letter-spaced zh-font">
-              JavaScript Frontend Developer
+              SUBIN
+              <br />
+              FRONTEND DEVELOPER
             </h2>
             <h6 className="alt-font zh-font">
-              WEB<i className="myf-dot-single"></i>PROGRAMMER
-              <i className="myf-dot-single"></i>DESIGNER
+              WEB<i className="myf-dot-single"></i>JAVASCRIPT
+              <i className="myf-dot-single"></i>PROGRAMMER
             </h6>
           </div>
         </div>

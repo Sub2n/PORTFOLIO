@@ -1,4 +1,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url('https://fonts.googleapis.com/css?family=Oswald:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300&display=swap&subset=korean');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5342,14 +5345,31 @@ section {
 }
 
 #about img {
-  position: absolute;
-  top: 0;
-  right: 0
+  margin: 0 auto;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 #about h3 {
-  line-height: 1.55
+  line-height: 1.55;
+  font-family: 'Noto Serif KR',
+  serif;
 }
+
+#about li {
+  height: 120px;
+  min-width: 60px;
+  min-height: 60px;
+  position: relative;
+}
+
+#about li > span {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 #services li {
   visibility: hidden;
@@ -5604,6 +5624,11 @@ svg .polygon:hover+.polygon+.polygon+.polygon+.polygon+.polygon+.polygon+.polygo
 
 #skills h6 {
   color: #000
+}
+
+#skills p {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.22em;
 }
 
 #skills .bar {
@@ -6206,3 +6231,84 @@ body#not_found .rocket .steam {
   }
 }
 
+.rotate-words {
+  display: inline-block;
+  min-width: 180px;
+  min-height: 34px;
+  text-align: left;
+  text-indent: 4px;
+}
+
+.rotate-words span:first-child {
+  opacity: 1;
+}
+
+@keyframes rotateInWord {
+0% {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+@keyframes rotateOutWord {
+   0% {
+     opacity: 1;
+     transform: translateY(0);
+   }
+
+   100% {
+     opacity: 0;
+     transform: translateY(30px);
+   }
+}
+
+#about h3 {
+  text-align: justify;
+}
+
+.rotate-words span.rotate-in {
+  animation: rotateInWord .5s linear forwards;
+  -webkit-animation: rotateInWord .5s linear forwards;
+}
+
+.rotate-words span.rotate-out {
+  animation: rotateOutWord .5s linear forwards;
+  -webkit-animation: rotateOutWord .5s linear forwards;
+}
+
+.rotate-words span {
+  position: absolute;
+  opacity: 0;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+body.page-loaded {
+  min-width: 480px;
+}
+
+.subject {
+  position: relative;
+}
+
+.subject::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: 3px;
+  width: 100%;
+  border-bottom: 1px solid rgba(228, 228, 228, .623);
+}
+
+.subject span {
+  position: relative;
+  display: inline-block;
+  padding-right: 0.5em;
+  background: #fff;
+}
