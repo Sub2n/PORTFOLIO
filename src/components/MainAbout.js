@@ -83,7 +83,7 @@ const MainAbout = () => {
           </h4>
           <div className="columns">
             <div className="timeline">
-              <h4 className="event">
+              <div className="event">
                 <span className="date">2020</span>
                 <h4>홍익대학교 컴퓨터공학과 졸업</h4>
                 <p>
@@ -91,20 +91,20 @@ const MainAbout = () => {
                   네트워크프로그래밍, 컴퓨터그래픽스, 소프트웨어공학 등을
                   이수했습니다.
                 </p>
-              </h4>
-              <h4 className="event">
+              </div>
+              <div className="event">
                 <span className="date">2019</span>
                 <h4>패스트캠퍼스 프론트엔드 개발스쿨 수료</h4>
                 <p>
                   6개월 간 프론트엔드 강의를 수강하며 HTML, CSS, JavaScript를
                   공부했습니다. 2번의 해커톤과 팀 프로젝트를 진행했습니다.
                 </p>
-              </h4>
-              <h4 className="event">
+              </div>
+              <div className="event">
                 <span className="date">2014</span>
                 <h4>보평고등학교 졸업</h4>
                 <p>경기도 성남시 분당구 보평고등학교 과학중점반 졸업</p>
-              </h4>
+              </div>
             </div>
           </div>
         </div>

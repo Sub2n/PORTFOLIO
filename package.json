@@ -9,7 +9,10 @@
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-icons": "^3.8.0",
+    "react-page-scroller": "^2.0.2-beta",
     "react-scripts": "3.3.0",
+    "react-scroll-to": "^3.0.0-beta.3",
     "styled-components": "^5.0.0",
     "styled-components-grid": "^2.2.2"
   },

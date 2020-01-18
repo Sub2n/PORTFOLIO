@@ -5572,7 +5572,7 @@ svg .polygon:hover+.polygon+.polygon+.polygon+.polygon+.polygon+.polygon+.polygo
   transition: opacity 0.7s
 }
 
-.work-grid li a span {
+.work-grid li a span, svg {
   position: relative
 }
 
