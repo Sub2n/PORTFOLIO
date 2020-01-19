@@ -5116,12 +5116,13 @@ a.active {
   outline: none
 }
 
-a.dark {
+a.dark, span.dark {
   color: #d0d0d0
 }
 
 a.dark:hover,
-a.dark.active {
+a.dark.active,
+span.dark:hover  {
   color: #f0f0f0
 }
 
@@ -5182,7 +5183,8 @@ p {
   transform: translateZ(0)
 }
 
-#nav nav a, span {
+#nav nav a,
+#nav nav span {
   padding: 0 1em;
   white-space: nowrap;
   letter-spacing: 1px;
@@ -5192,7 +5194,7 @@ p {
 }
 
 #nav nav a:last-child,
-span:last-child {
+#nav nav span:last-child {
   padding-right: 0
 }
 
@@ -6213,7 +6215,8 @@ body#not_found .rocket .steam {
   }
 
 
-  #nav .desktop-nav a {
+  #nav .desktop-nav a,
+  #nav .desktop-nav span {
     display: block;
     padding: 4vh 25px;
     background: rgba(0, 0, 0, 0.9);
@@ -6224,7 +6227,8 @@ body#not_found .rocket .steam {
     transition: background 0.5s
   }
 
-  #nav .desktop-nav a:hover {
+  #nav .desktop-nav a:hover,
+    #nav .desktop-nav span:hover {
     background: rgba(10, 10, 10, 0.9)
   }
 
