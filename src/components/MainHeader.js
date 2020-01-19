@@ -7,14 +7,15 @@ const MainHeader = () => {
         <div className="header-background full-height">
           <div></div>
         </div>
+
         <div className="header-text middle-container">
           <div className="middle">
-            <h2 className="margin100 letter-spaced zh-font">
+            <h2 className="margin100 letter-spaced">
               SUBIN
               <br />
               FRONTEND DEVELOPER
             </h2>
-            <h6 className="alt-font zh-font">
+            <h6 className="alt-font">
               WEB<i className="myf-dot-single"></i>JAVASCRIPT
               <i className="myf-dot-single"></i>PROGRAMMER
             </h6>

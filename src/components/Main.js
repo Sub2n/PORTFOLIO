@@ -5,19 +5,12 @@ import MainSkills from './MainSkills';
 import MainWorks from './MainWorks';
 import MainContact from './MainContact';
 
-import * as Scroll from 'react-scroll';
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from 'react-scroll';
+import { Element, scrollSpy, scroller } from 'react-scroll';
 
-const Main = () => {
+const Main = ({ isScroll }) => {
   const [currentElem, setCurrentElem] = useState(0);
   const [scrollTop, setScrollTop] = useState(window.scrollY);
+
   const Elems = useRef([
     { el: 'mainHeader', pos: 0 },
     { el: 'mainAbout', pos: 0 },
@@ -46,12 +39,9 @@ const Main = () => {
     const windowHeight = window.innerHeight;
     const nextElem = currentElem + 1;
 
-    const position = scrollTop + windowHeight;
+    const position = scrollTop + windowHeight - 100;
     if (nextElem >= Elems.current.length) return;
-    console.log(
-      `nextPos: ${Elems.current[nextElem].pos}`,
-      `position: ${position}`
-    );
+
     if (
       position >= Elems.current[nextElem].pos &&
       position - Elems.current[nextElem].pos <
@@ -63,7 +53,6 @@ const Main = () => {
         delay: 50,
         smooth: true
       });
-      console.log('current: ', currentElem);
     }
   };
 
@@ -72,10 +61,7 @@ const Main = () => {
     const position = scrollTop + 100;
     const prevElem = currentElem - 1;
     if (prevElem < 0) return;
-    console.log(
-      `currentPos: ${Elems.current[currentElem].pos}`,
-      `position: ${position}`
-    );
+
     if (
       Elems.current[currentElem].pos >= position &&
       Elems.current[currentElem].pos - position <
@@ -87,12 +73,6 @@ const Main = () => {
         delay: 50,
         smooth: true
       });
-      console.log(
-        position,
-        Elems.current[prevElem].pos,
-        Elems.current[currentElem].pos,
-        currentElem
-      );
     }
   };
 
@@ -115,7 +95,6 @@ const Main = () => {
       )
         tmp = i;
     }
-    console.log(`getCurrentElem`);
     setCurrentElem(tmp);
   }, [refs]);
 
@@ -136,25 +115,25 @@ const Main = () => {
   };
 
   useEffect(() => {
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log('begin', arguments);
-      // console.log(to, element);
-    });
+    // Events.scrollEvent.register('begin', function(to, element) {
+    //   console.log('begin', arguments);
+    //   // console.log(to, element);
+    // });
 
-    Events.scrollEvent.register('end', function(to, element) {
-      console.log('end', arguments);
-    });
+    // Events.scrollEvent.register('end', function(to, element) {
+    //   console.log('end', arguments);
+    // });
 
     scrollSpy.update();
 
-    return () => {
-      Events.scrollEvent.remove('begin');
-      Events.scrollEvent.remove('end');
-    };
+    // return () => {
+    //   Events.scrollEvent.remove('begin');
+    //   Events.scrollEvent.remove('end');
+    // };
   }, []);
 
   return (
-    <div role="main" onWheel={onWheel}>
+    <div role="main" onWheel={isScroll ? onWheel : null}>
       <Element name="mainHeader" ref={refs.current[0]}>
         <MainHeader />
       </Element>

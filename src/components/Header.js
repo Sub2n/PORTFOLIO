@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
-const Header = () => {
+const Header = ({ isScroll, setIsScroll }) => {
   const [show, setShow] = useState(false);
   const [scroll, setScroll] = useState(0);
 
@@ -47,6 +47,11 @@ const Header = () => {
             <Link smooth to="#contact">
               CONTACT
             </Link>
+            <span
+              className="scrollButton"
+              onClick={() => setIsScroll(() => !isScroll)}>
+              SCROLL EFFECT <strong>{isScroll ? 'ON' : 'OFF'}</strong>
+            </span>
           </li>
         </ul>
       </nav>

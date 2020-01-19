@@ -5182,7 +5182,7 @@ p {
   transform: translateZ(0)
 }
 
-#nav nav a {
+#nav nav a, span {
   padding: 0 1em;
   white-space: nowrap;
   letter-spacing: 1px;
@@ -5191,7 +5191,8 @@ p {
   transition: color 0.1s
 }
 
-#nav nav a:last-child {
+#nav nav a:last-child,
+span:last-child {
   padding-right: 0
 }
 
@@ -6211,6 +6212,7 @@ body#not_found .rocket .steam {
     transition: all 0.5s
   }
 
+
   #nav .desktop-nav a {
     display: block;
     padding: 4vh 25px;
@@ -6456,4 +6458,8 @@ body.page-loaded {
   .event:before {
     display: none;
   }
+}
+
+span.scrollButton {
+  cursor: pointer;
 }
