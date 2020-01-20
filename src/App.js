@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
-  const [isScroll, setIsScroll] = useState(false);
+  // const [isScroll, setIsScroll] = useState(false);
 
   useEffect(() => {
     const body = document.querySelector('body');
@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header isScroll={isScroll} setIsScroll={setIsScroll} />
-      <Main isScroll={isScroll} />
+      <Header />
+      <Main />
       <Footer />
     </div>
   );

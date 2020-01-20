@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { IconContext } from 'react-icons';
 import { GiChainedHeart } from 'react-icons/gi';
 
-const Header = ({ isScroll, setIsScroll }) => {
+const Header = () => {
   const [show, setShow] = useState(false);
   const [scroll, setScroll] = useState(0);
   const [navOpen, setNavOpen] = useState(false);
@@ -53,6 +53,9 @@ const Header = ({ isScroll, setIsScroll }) => {
             <Link smooth to="#about" className="dark" onClick={onClick}>
               ABOUT
             </Link>
+            <Link smooth to="#strength" className="dark" onClick={onClick}>
+              STRENGTH
+            </Link>
             <Link smooth to="#skills" className="dark" onClick={onClick}>
               SKILLS
             </Link>
@@ -62,11 +65,6 @@ const Header = ({ isScroll, setIsScroll }) => {
             <Link smooth to="#contact" className="dark" onClick={onClick}>
               CONTACT
             </Link>
-            {/* <span
-              className="scrollButton dark"
-              onClick={() => setIsScroll(() => !isScroll)}>
-              SCROLL EFFECT <strong>{isScroll ? 'ON' : 'OFF'}</strong>
-            </span> */}
           </li>
         </ul>
       </nav>
