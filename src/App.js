@@ -5,7 +5,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
-  const [isScroll, setIsScroll] = useState(true);
+  const [isScroll, setIsScroll] = useState(false);
 
   useEffect(() => {
     const body = document.querySelector('body');

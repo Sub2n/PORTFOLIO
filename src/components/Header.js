@@ -62,11 +62,11 @@ const Header = ({ isScroll, setIsScroll }) => {
             <Link smooth to="#contact" className="dark" onClick={onClick}>
               CONTACT
             </Link>
-            <span
+            {/* <span
               className="scrollButton dark"
               onClick={() => setIsScroll(() => !isScroll)}>
               SCROLL EFFECT <strong>{isScroll ? 'ON' : 'OFF'}</strong>
-            </span>
+            </span> */}
           </li>
         </ul>
       </nav>

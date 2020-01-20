@@ -5166,7 +5166,10 @@ p {
 }
 
 #nav {
-  text-align: justify;
+display: flex;
+justify-content: space-between;
+align-items: center;
+  /* text-align: justify; */
   height: 50px;
   padding: 0 25px;
   background: #222;
@@ -5203,7 +5206,8 @@ p {
 }
 
 #nav>div {
-  height: 100%
+  height: 100%;
+  display: flex;
 }
 
 #nav>div h1 {
@@ -5215,12 +5219,12 @@ p {
   content: '';
   height: 100%
 }
-
+/* 
 #nav::after {
   content: '';
   display: inline-block;
   width: 100%
-}
+} */
 
 #nav.show {
   opacity: 1;
@@ -5820,12 +5824,11 @@ button {
   font-size: 0.9em
 }
 
-#contact_section img {
+#contact img {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -165px;
-  margin-top: -125px
+  transform: translateX(-50%) translateY(-50%)
 }
 
 .message {
@@ -6466,4 +6469,39 @@ body.page-loaded {
 
 span.scrollButton {
   cursor: pointer;
+}
+
+a.contact {
+  color:#111;
+  vertical-align: middle;
+}
+
+a.contact:hover {
+  color: #aaa;
+}
+
+a.contact #contactLink{
+  margin-left: 15px;
+  color:#111;
+  vertical-align: middle;
+}
+
+#mailLink  {
+  margin-left: 10px;
+  color: #aaa;
+  vertical-align: middle;
+}
+
+#mailLink:hover {
+  color: #aaa;
+}
+
+a.contact #contactLink:hover
+ {
+  color:#111
+}
+
+.contact.phone {
+  margin-left: 10px;
+  margin-right: 15px;
 }
