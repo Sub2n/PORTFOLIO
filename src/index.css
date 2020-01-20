@@ -6505,3 +6505,7 @@ a.contact #contactLink:hover
   margin-left: 10px;
   margin-right: 15px;
 }
+
+.strengths {
+  cursor: pointer;
+}
