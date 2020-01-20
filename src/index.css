@@ -5935,7 +5935,9 @@ input:-webkit-autofill {
 
 footer {
   position: relative;
-  padding: 10em 0 2em
+  padding: 10em 0 2em;
+color: #d3d3d3;
+
 }
 
 footer img {
