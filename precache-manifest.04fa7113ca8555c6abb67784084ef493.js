@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56f9c64abb312879b436b9b743f285c1",
+    "revision": "be8356e836fc412e06ed21a338748f86",
     "url": "/PORTFOLIO/index.html"
   },
   {
-    "revision": "ed0885eca3e6ce5703a6",
-    "url": "/PORTFOLIO/static/css/main.82d71d9b.chunk.css"
+    "revision": "cb376d62a5da4e70d9b4",
+    "url": "/PORTFOLIO/static/css/main.9173f96b.chunk.css"
   },
   {
     "revision": "6563bd3108bec82cdf5c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PORTFOLIO/static/js/2.a370c4c3.chunk.js.LICENSE"
   },
   {
-    "revision": "ed0885eca3e6ce5703a6",
-    "url": "/PORTFOLIO/static/js/main.77221154.chunk.js"
+    "revision": "cb376d62a5da4e70d9b4",
+    "url": "/PORTFOLIO/static/js/main.03e57e08.chunk.js"
   },
   {
     "revision": "69997076d3985ba27a96",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PORTFOLIO/static/media/fastflix_small.e10c055f.png"
   },
   {
-    "revision": "08b80f294d66ddd4ae31a864626f03ae",
-    "url": "/PORTFOLIO/static/media/git.08b80f29.png"
+    "revision": "3b4f0080df84675d758d491399ca55db",
+    "url": "/PORTFOLIO/static/media/git.3b4f0080.png"
   },
   {
     "revision": "e82b4db6f1a95b8f71986f054f79a53c",
