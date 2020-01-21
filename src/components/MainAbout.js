@@ -54,7 +54,7 @@ const MainAbout = () => {
   return (
     <section id="about" className="wrap white-background">
       <div className="row margin100">
-        <div className="small-12 columns large-7 large-centered center">
+        <div className="small-12 columns large-7 large-centered center intro">
           <h4 className="letter-spaced margin50">ABOUT ME</h4>
           <h3>
             안녕하세요, 저는

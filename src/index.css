@@ -6258,6 +6258,7 @@ body#not_found .rocket .steam {
   }
 }
 
+
 .rotate-words {
   display: inline-block;
   min-width: 180px;
@@ -6268,6 +6269,19 @@ body#not_found .rocket .steam {
 
 .rotate-words span:first-child {
   opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .rotate-words {
+    min-height: 28px;
+    min-width: 166px;
+  }
+}
+
+@media screen and (max-width: 767px){
+   .intro h3 {
+     font-size: 1.8em;
+   }
 }
 
 @keyframes rotateInWord {
