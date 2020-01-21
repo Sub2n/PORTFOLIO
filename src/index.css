@@ -5116,12 +5116,13 @@ a.active {
   outline: none
 }
 
-a.dark {
+a.dark, span.dark {
   color: #d0d0d0
 }
 
 a.dark:hover,
-a.dark.active {
+a.dark.active,
+span.dark:hover  {
   color: #f0f0f0
 }
 
@@ -5165,7 +5166,10 @@ p {
 }
 
 #nav {
-  text-align: justify;
+display: flex;
+justify-content: space-between;
+align-items: center;
+  /* text-align: justify; */
   height: 50px;
   padding: 0 25px;
   background: #222;
@@ -5182,7 +5186,8 @@ p {
   transform: translateZ(0)
 }
 
-#nav nav a {
+#nav nav a,
+#nav nav span {
   padding: 0 1em;
   white-space: nowrap;
   letter-spacing: 1px;
@@ -5191,7 +5196,8 @@ p {
   transition: color 0.1s
 }
 
-#nav nav a:last-child {
+#nav nav a:last-child,
+#nav nav span:last-child {
   padding-right: 0
 }
 
@@ -5200,7 +5206,8 @@ p {
 }
 
 #nav>div {
-  height: 100%
+  height: 100%;
+  display: flex;
 }
 
 #nav>div h1 {
@@ -5212,12 +5219,12 @@ p {
   content: '';
   height: 100%
 }
-
+/* 
 #nav::after {
   content: '';
   display: inline-block;
   width: 100%
-}
+} */
 
 #nav.show {
   opacity: 1;
@@ -5545,6 +5552,17 @@ svg .polygon:hover+.polygon+.polygon+.polygon+.polygon+.polygon+.polygon+.polygo
   transition: opacity 0.5s
 }
 
+.work-img .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: 1;
+  background: rgba(149, 141, 137, 0.42);
+}
+
 .work-grid li .work-caption {
   position: absolute;
   padding: 1em;
@@ -5572,7 +5590,7 @@ svg .polygon:hover+.polygon+.polygon+.polygon+.polygon+.polygon+.polygon+.polygo
   transition: opacity 0.7s
 }
 
-.work-grid li a span {
+.work-grid li a span, svg {
   position: relative
 }
 
@@ -5806,12 +5824,11 @@ button {
   font-size: 0.9em
 }
 
-#contact_section img {
+#contact img {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -165px;
-  margin-top: -125px
+  transform: translateX(-50%) translateY(-50%)
 }
 
 .message {
@@ -5918,7 +5935,9 @@ input:-webkit-autofill {
 
 footer {
   position: relative;
-  padding: 10em 0 2em
+  padding: 10em 0 2em;
+color: #d3d3d3;
+
 }
 
 footer img {
@@ -6200,7 +6219,9 @@ body#not_found .rocket .steam {
     transition: all 0.5s
   }
 
-  #nav .desktop-nav a {
+
+  #nav .desktop-nav a,
+  #nav .desktop-nav span {
     display: block;
     padding: 4vh 25px;
     background: rgba(0, 0, 0, 0.9);
@@ -6211,7 +6232,8 @@ body#not_found .rocket .steam {
     transition: background 0.5s
   }
 
-  #nav .desktop-nav a:hover {
+  #nav .desktop-nav a:hover,
+    #nav .desktop-nav span:hover {
     background: rgba(10, 10, 10, 0.9)
   }
 
@@ -6445,4 +6467,123 @@ body.page-loaded {
   .event:before {
     display: none;
   }
+}
+
+span.scrollButton {
+  cursor: pointer;
+}
+
+a.contact {
+  color:#111;
+  vertical-align: middle;
+}
+
+a.contact:hover {
+  color: #aaa;
+}
+
+a.contact #contactLink{
+  margin-left: 15px;
+  color:#111;
+  vertical-align: middle;
+}
+
+#mailLink  {
+  margin-left: 10px;
+  color: #aaa;
+  vertical-align: middle;
+}
+
+#mailLink:hover {
+  color: #aaa;
+}
+
+a.contact #contactLink:hover
+ {
+  color:#111
+}
+
+.contact.phone {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.strengths {
+  cursor: pointer;
+}
+
+.strengths span {
+  color: #aaa;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.strengths span:hover, .strengths span.active {
+  color: #111;
+}
+
+.strengths img {
+  -webkit-transition: color 0.5s;
+  transition: all 0.5s;
+}
+
+.strengths img.filter-gray {
+  filter: invert(71%) sepia(25%) saturate(0%) hue-rotate(157deg) brightness(96%)
+  contrast(78%);
+}
+
+.strengths img.filter-black, .strengths span:hover img {
+  filter: invert(1%) sepia(4%) saturate(33%) hue-rotate(314deg) brightness(92%)
+  contrast(89%);
+}
+
+.sincerity-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  margin-right: 10px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.flex-item-1 {
+  flex-grow: 1;
+}
+
+
+.flex-item-2 {
+  flex-grow: 2;
+}
+
+/* #service-content p {
+  transition: opacity 0.5s;
+} */
+
+.desc-enter, .desc-apper {
+  opacity: 0.5;
+}
+
+.desc-enter-active,
+.desc-apper-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.desc-exit {
+  width: 0;
+  margin-left: -3000vw;
+  height: 0;
+  opacity: 0.5;
+}
+
+.desc-exit.desc-exit-active {
+  width: 0;
+  margin-left: -3000vw;
+  height: 0;
+  opacity: 0;
+  transition: all 250ms;
 }

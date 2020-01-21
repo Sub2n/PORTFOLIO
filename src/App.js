@@ -5,6 +5,8 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
+  // const [isScroll, setIsScroll] = useState(false);
+
   useEffect(() => {
     const body = document.querySelector('body');
     body.classList.add('page-loaded');

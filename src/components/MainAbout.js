@@ -34,9 +34,10 @@ const computerEngineeringSkills = [
 
 const characters = [
   '자바스크립트를 사랑하는',
-  '개발을 좋아하는',
-  'UX 향상을 고려하는',
-  '몸과 마음이 건강한'
+  '개발이 재미있는',
+  'UX를 고려하는',
+  '운동을 좋아하고',
+  '풀스택이 목표인'
 ];
 
 const MainAbout = () => {
@@ -83,28 +84,28 @@ const MainAbout = () => {
           </h4>
           <div className="columns">
             <div className="timeline">
-              <h4 className="event">
+              <div className="event">
                 <span className="date">2020</span>
                 <h4>홍익대학교 컴퓨터공학과 졸업</h4>
                 <p>
-                  C/C++을 기반으로 자료구조, 알고리즘, 운영체제,
-                  네트워크프로그래밍, 컴퓨터그래픽스, 소프트웨어공학 등을
-                  이수했습니다.
+                  C/C++을 기반으로 자료구조, 알고리즘, 기초데이터베이스,
+                  운영체제, 네트워크프로그래밍, 네트워크보안, 컴퓨터그래픽스,
+                  소프트웨어공학 등을 이수했습니다.
                 </p>
-              </h4>
-              <h4 className="event">
+              </div>
+              <div className="event">
                 <span className="date">2019</span>
                 <h4>패스트캠퍼스 프론트엔드 개발스쿨 수료</h4>
                 <p>
                   6개월 간 프론트엔드 강의를 수강하며 HTML, CSS, JavaScript를
                   공부했습니다. 2번의 해커톤과 팀 프로젝트를 진행했습니다.
                 </p>
-              </h4>
-              <h4 className="event">
+              </div>
+              <div className="event">
                 <span className="date">2014</span>
                 <h4>보평고등학교 졸업</h4>
                 <p>경기도 성남시 분당구 보평고등학교 과학중점반 졸업</p>
-              </h4>
+              </div>
             </div>
           </div>
         </div>

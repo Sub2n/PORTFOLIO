@@ -14,7 +14,7 @@ const skills = [
 
 // Progress Bar
 const MainSkills = () => {
-  const [scrollTop, setScroppTop] = useState(window.scrollY);
+  const [scrollTop, setScrollTop] = useState(window.scrollY);
   const refs = [
     useRef(null),
     useRef(null),
@@ -28,7 +28,7 @@ const MainSkills = () => {
 
   const onScroll = useCallback(e => {
     const scrollTop = ('scroll', e.srcElement.scrollingElement.scrollTop);
-    setScroppTop(scrollTop);
+    setScrollTop(scrollTop);
   }, []);
 
   const checkPercentage = useCallback(() => {

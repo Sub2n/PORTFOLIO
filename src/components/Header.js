@@ -1,9 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+import { IconContext } from 'react-icons';
+import { GiChainedHeart } from 'react-icons/gi';
 
 const Header = () => {
-  const [scroll, setScroll] = useState(0);
   const [show, setShow] = useState(false);
+  const [scroll, setScroll] = useState(0);
+  const [navOpen, setNavOpen] = useState(false);
 
   const onScroll = e => {
     const scrollTop = ('scroll', e.srcElement.scrollingElement.scrollTop);
@@ -20,22 +24,47 @@ const Header = () => {
     else setShow(false);
   }, [scroll]);
 
+  const onClick = () => {
+    if (navOpen) setNavOpen(false);
+  };
+
   return (
     <header id="nav" className={show ? 'show' : null}>
-      <div role="banner"></div>
+      <div role="banner">
+        <IconContext.Provider
+          value={{ style: { verticalAlign: 'middle', width: '3em' } }}>
+          <GiChainedHeart id="logo" />
+        </IconContext.Provider>
+        <h1 className="letter-spaced">SUBIN</h1>
+      </div>
       <nav>
-        <div className="mobile-nav">
+        <div className="mobile-nav" onClick={() => setNavOpen(() => !navOpen)}>
           <a className="dark">
             <span className="myf-menu"></span>
           </a>
         </div>
-        <ul className="desktop-nav" role="navigation">
+        <ul
+          className={`desktop-nav ${navOpen ? 'nav-open' : null}`}
+          role="navigation">
           <li>
-            <a href="#header">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#contact">CONTACT</a>
+            <Link smooth to="#header" className="dark" onClick={onClick}>
+              HOME
+            </Link>
+            <Link smooth to="#about" className="dark" onClick={onClick}>
+              ABOUT
+            </Link>
+            <Link smooth to="#strength" className="dark" onClick={onClick}>
+              STRENGTH
+            </Link>
+            <Link smooth to="#skills" className="dark" onClick={onClick}>
+              SKILLS
+            </Link>
+            <Link smooth to="#projects" className="dark" onClick={onClick}>
+              PROJECTS
+            </Link>
+            <Link smooth to="#contact" className="dark" onClick={onClick}>
+              CONTACT
+            </Link>
           </li>
         </ul>
       </nav>
