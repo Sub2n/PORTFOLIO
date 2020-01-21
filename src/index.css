@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300&display=swap&subset=korean');
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean');
 
 html {
   font-family: sans-serif;
@@ -6276,9 +6277,6 @@ body#not_found .rocket .steam {
     min-height: 28px;
     min-width: 166px;
   }
-}
-
-@media screen and (max-width: 767px){
    .intro h3 {
      font-size: 1.8em;
    }
@@ -6524,6 +6522,20 @@ a.contact #contactLink:hover
 
 .strengths {
   cursor: pointer;
+ 
+}
+
+.sincerity-flex p,
+.strengths h5,
+.desktop-nav a,
+.event p {
+  font-family: 'Noto Sans KR',
+    sans-serif;
+  font-size: 1.15em;
+  font-weight: 300;
+}
+.strengths h5 {
+  font-weight: 400;
 }
 
 .strengths span {
@@ -6560,7 +6572,7 @@ a.contact #contactLink:hover
 }
 
 .item {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .item:last-child {
@@ -6574,6 +6586,22 @@ a.contact #contactLink:hover
 
 .flex-item-2 {
   flex-grow: 2;
+}
+@media screen and (max-width: 1023px) {
+  .sincerity-flex {
+    flex-direction: column;
+  }
+  /* #service_content img {
+    width: 50%;
+  } */
+  .item {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* #service-content p {
@@ -6615,3 +6643,4 @@ a.contact #contactLink:hover
 #service_content img {
   transition: 0.5s transform;
 }
+

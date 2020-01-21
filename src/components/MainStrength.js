@@ -94,18 +94,20 @@ const MainStrength = () => {
               <div className="colums sincerity-flex">
                 <div className="flex-item-2 item image-box">
                   <picture style={{ width: '100%' }}>
-                    <source media="(max-width: 1028px)" srcSet={github_small} />
-                    <img src={github} alt="commits" />
+                    <source media="(max-width: 1028px)" srcSet={github} />
+                    <img src={github_small} alt="commits" />
                   </picture>
                 </div>
                 <div className="flex-item-2 item">
                   <p>
                     프론트엔드 개발을 시작한 2019년 3월부터 지금까지 꾸준히
-                    Github에 커밋을 하며 여러가지를 학습하고 있습니다. 6개월 간
-                    프론트엔드 개발 학원에 다니며 HTML, CSS, JavaScript와
-                    Angular 프레임워크를 공부했습니다. 2019년 하반기에는 졸업을
-                    위해서 학교에 다니며 자바스크립트/알고리즘 스터디와 학교
-                    공부를 병행 했습니다.
+                    Github에 커밋을 하며 여러 가지 기술을 학습하고 있습니다.
+                    6개월간 프론트엔드 개발 학원에 다니며 HTML, CSS,
+                    JavaScript와 Angular 프레임워크를 공부했습니다. 2019년
+                    하반기에는 졸업을 위해서 학교에 다니며 자바스크립트/알고리즘
+                    스터디와 학교 공부를 병행했습니다. 1월부터는 React
+                    라이브러리를 독학하여 해당 포트폴리오 페이지를 React의
+                    함수형 컴포넌트와 Hooks를 사용하여 구현했습니다.
                   </p>
                 </div>
               </div>
@@ -145,19 +147,16 @@ const MainStrength = () => {
               <div className="colums sincerity-flex">
                 <div className="flex-item-2 item image-box">
                   <picture style={{ width: '100%' }}>
-                    <source
-                      media="(max-width: 1028px)"
-                      srcSet={tickets_small}
-                    />
-                    <img src={tickets} alt="commits" />
+                    <source media="(max-width: 1028px)" srcSet={tickets} />
+                    <img src={tickets_small} alt="commits" />
                   </picture>
                 </div>
                 <div className="flex-item-1 item">
                   <p>
-                    잘 듣고, 잘 말합니다. 조별과제나 팀 프로젝트를 진행할 때
-                    항상 모든 팀원들의 의견을 귀 기울여 듣고, 나의 의견을
+                    잘 듣고, 잘 말합니다. 조별 과제나 팀 프로젝트를 진행할 때
+                    항상 모든 팀원의 의견을 귀 기울여 듣고, 나의 의견을
                     상대방에게 <strong>적극적으로 표현</strong>하곤 합니다.
-                    공부든 일이든 혼자하는 것보다 여러 사람들과 함께할 때
+                    공부든 일이든 혼자 하는 것보다 여러 사람과 함께할 때
                     시너지를 내고 분위기를 활발하게 만드는 성격입니다. 백엔드,
                     iOS와 협업한 프로젝트에서 프론트엔드 팀장을 맡아 회의 및
                     발표를 여러 번 경험했고, 그 과정에서 생겼던 크고 작은
@@ -181,7 +180,7 @@ const MainStrength = () => {
                 <strong>될 때까지 하는 끈기</strong>가 있습니다. Angular로
                 Netflix 클론 프로젝트를 진행하면서 앱에서 전역적으로 사용하는
                 상태를 변경해도 컴포넌트에 반영되지 않는 문제가 있었습니다. 처음
-                겪는 상황에 며칠동안 문제를 해결하지 못하고 헤맸으나 포기하지
+                겪는 상황에 며칠 동안 문제를 해결하지 못하고 헤맸으나 포기하지
                 않고 사방에서 해결책을 찾아서 결국 문제를 해결한 경험이
                 있습니다. 꾸준하게 노력하면 된다는 것과 Getter, Setter를
                 사용하면 언제나 최신 상태를 참조한다는 사실을 깨닫는 계기가

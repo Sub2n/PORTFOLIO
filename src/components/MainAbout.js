@@ -35,9 +35,9 @@ const computerEngineeringSkills = [
 const characters = [
   '자바스크립트를 사랑하는',
   '개발이 재미있는',
-  'UX를 고려하는',
+  'UX를 생각하는',
   '운동을 좋아하고',
-  '풀스택 개발자가 목표인'
+  '풀스택을 지향하는'
 ];
 
 const MainAbout = () => {
