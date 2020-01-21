@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const MainHeader = () => {
+  const [height, setHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    setHeight(window.innerHeight + 3);
+  }, []);
+
   return (
     <section id="header">
-      <div className="header-container full-height">
-        <div className="header-background full-height">
+      <div className="header-container" style={{ height }}>
+        <div className="header-background" style={{ height }}>
           <div></div>
         </div>
 
@@ -16,8 +22,10 @@ const MainHeader = () => {
               FRONTEND DEVELOPER
             </h2>
             <h6 className="alt-font">
-              WEB<i className="myf-dot-single"></i>JAVASCRIPT
-              <i className="myf-dot-single"></i>PROGRAMMER
+              WEB<i className="myf-dot-single"></i>
+              JAVASCRIPT
+              <i className="myf-dot-single"></i>
+              PROGRAMMER
             </h6>
           </div>
         </div>

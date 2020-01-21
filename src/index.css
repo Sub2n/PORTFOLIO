@@ -5272,16 +5272,16 @@ align-items: center;
 }
 
 #header {
-  /* margin-top: -3px; */
+  margin-top: -3px;
   color: #f0f0f0;
   position: relative;
   text-align: center;
   overflow: hidden;
 }
 
-.full-height {
+/* .full-height {
   height: 100vh !important
-}
+} */
 
 #header h2 {
   font-size: 3em
@@ -5341,11 +5341,11 @@ align-items: center;
   text-align: center;
   background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
   background-repeat: no-repeat;
-  background-size: 100% 100vh;
+  background-size: 100% 100%;
 }
 
 .header-background div {
-  height: 100vh;
+  height: 100%;
   width: 100%
 }
 
