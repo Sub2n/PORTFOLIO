@@ -6511,3 +6511,79 @@ a.contact #contactLink:hover
 .strengths {
   cursor: pointer;
 }
+
+.strengths span {
+  color: #aaa;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.strengths span:hover, .strengths span.active {
+  color: #111;
+}
+
+.strengths img {
+  -webkit-transition: color 0.5s;
+  transition: all 0.5s;
+}
+
+.strengths img.filter-gray {
+  filter: invert(71%) sepia(25%) saturate(0%) hue-rotate(157deg) brightness(96%)
+  contrast(78%);
+}
+
+.strengths img.filter-black, .strengths span:hover img {
+  filter: invert(1%) sepia(4%) saturate(33%) hue-rotate(314deg) brightness(92%)
+  contrast(89%);
+}
+
+.sincerity-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  margin-right: 10px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.flex-item-1 {
+  flex-grow: 1;
+}
+
+
+.flex-item-2 {
+  flex-grow: 2;
+}
+
+/* #service-content p {
+  transition: opacity 0.5s;
+} */
+
+.desc-enter, .desc-apper {
+  opacity: 0.5;
+}
+
+.desc-enter-active,
+.desc-apper-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.desc-exit {
+  width: 0;
+  margin-left: -3000vw;
+  height: 0;
+  opacity: 0.5;
+}
+
+.desc-exit.desc-exit-active {
+  width: 0;
+  margin-left: -3000vw;
+  height: 0;
+  opacity: 0;
+  transition: all 250ms;
+}
