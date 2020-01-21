@@ -6540,7 +6540,9 @@ a.contact #contactLink:hover
 
 .sincerity-flex {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item {
@@ -6575,15 +6577,27 @@ a.contact #contactLink:hover
 }
 .desc-exit {
   width: 0;
-  margin-left: -3000vw;
+  margin-left: -30000vw;
   height: 0;
   opacity: 0.5;
 }
 
 .desc-exit.desc-exit-active {
   width: 0;
-  margin-left: -3000vw;
+  margin-left: -30000vw;
   height: 0;
   opacity: 0;
   transition: all 250ms;
+}
+
+#service_content .image-box {
+  overflow: hidden;
+}
+
+#service_content img:hover {
+  transform: scale(1.1);
+}
+
+#service_content img {
+  transition: 0.5s transform;
 }
