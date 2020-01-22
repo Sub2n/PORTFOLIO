@@ -5336,9 +5336,9 @@ align-items: center;
   position: fixed;
   z-index: -1;
   text-align: center;
-  background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
+  background-image: url('../src/imgs/smileSubin.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: auto 100vh;
 }
 
 .header-background .mvclip.mobile,
