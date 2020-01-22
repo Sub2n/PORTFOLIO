@@ -5246,12 +5246,8 @@ align-items: center;
 }
 
 .page-loaded #header .header-text {
-  opacity: 0;
-  top: 0
-}
-
-.page-loaded #header .header-text.active {  
   opacity: 1;
+  top: 0
 }
 
 .no-js #header .header-text {

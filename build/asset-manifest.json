@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PORTFOLIO/static/css/main.499cd460.chunk.css",
-    "main.js": "/PORTFOLIO/static/js/main.49f650cc.chunk.js",
-    "main.js.map": "/PORTFOLIO/static/js/main.49f650cc.chunk.js.map",
+    "main.css": "/PORTFOLIO/static/css/main.06f13a3a.chunk.css",
+    "main.js": "/PORTFOLIO/static/js/main.cb1fa6cb.chunk.js",
+    "main.js.map": "/PORTFOLIO/static/js/main.cb1fa6cb.chunk.js.map",
     "runtime-main.js": "/PORTFOLIO/static/js/runtime-main.cfff4637.js",
     "runtime-main.js.map": "/PORTFOLIO/static/js/runtime-main.cfff4637.js.map",
-    "static/js/2.b024b6f0.chunk.js": "/PORTFOLIO/static/js/2.b024b6f0.chunk.js",
-    "static/js/2.b024b6f0.chunk.js.map": "/PORTFOLIO/static/js/2.b024b6f0.chunk.js.map",
+    "static/js/2.d6cc8214.chunk.js": "/PORTFOLIO/static/js/2.d6cc8214.chunk.js",
+    "static/js/2.d6cc8214.chunk.js.map": "/PORTFOLIO/static/js/2.d6cc8214.chunk.js.map",
     "index.html": "/PORTFOLIO/index.html",
-    "precache-manifest.ff24d33b2f8e577b7b8e6dd8d326d04c.js": "/PORTFOLIO/precache-manifest.ff24d33b2f8e577b7b8e6dd8d326d04c.js",
+    "precache-manifest.98f868ae157f4b1a1409e69c9b86d4c4.js": "/PORTFOLIO/precache-manifest.98f868ae157f4b1a1409e69c9b86d4c4.js",
     "service-worker.js": "/PORTFOLIO/service-worker.js",
-    "static/css/main.499cd460.chunk.css.map": "/PORTFOLIO/static/css/main.499cd460.chunk.css.map",
-    "static/js/2.b024b6f0.chunk.js.LICENSE": "/PORTFOLIO/static/js/2.b024b6f0.chunk.js.LICENSE",
+    "static/css/main.06f13a3a.chunk.css.map": "/PORTFOLIO/static/css/main.06f13a3a.chunk.css.map",
+    "static/js/2.d6cc8214.chunk.js.LICENSE": "/PORTFOLIO/static/js/2.d6cc8214.chunk.js.LICENSE",
     "static/media/Angular.svg": "/PORTFOLIO/static/media/Angular.72f1b89e.svg",
     "static/media/C++.svg": "/PORTFOLIO/static/media/C++.c64a068e.svg",
     "static/media/C.svg": "/PORTFOLIO/static/media/C.65aa0b06.svg",
@@ -40,14 +40,15 @@
     "static/media/sincerity.svg": "/PORTFOLIO/static/media/sincerity.51dbefd0.svg",
     "static/media/skill_background.jpg": "/PORTFOLIO/static/media/skill_background.fcbacfa4.jpg",
     "static/media/smile.png": "/PORTFOLIO/static/media/smile.f7454e7c.png",
+    "static/media/subinVideo.mp4": "/PORTFOLIO/static/media/subinVideo.6fbef291.mp4",
     "static/media/tickets.png": "/PORTFOLIO/static/media/tickets.484cf3b2.png",
     "static/media/tickets_small.png": "/PORTFOLIO/static/media/tickets_small.e7f070ef.png",
     "static/media/webpack.svg": "/PORTFOLIO/static/media/webpack.872ecaf9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cfff4637.js",
-    "static/js/2.b024b6f0.chunk.js",
-    "static/css/main.499cd460.chunk.css",
-    "static/js/main.49f650cc.chunk.js"
+    "static/js/2.d6cc8214.chunk.js",
+    "static/css/main.06f13a3a.chunk.css",
+    "static/js/main.cb1fa6cb.chunk.js"
   ]
 }
