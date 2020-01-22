@@ -5346,7 +5346,7 @@ align-items: center;
   display: none
 }
 
-@media only screen and (min-width: 824px) {
+@media only screen and (min-width: 769px) {
   .header-background .mvclip {
     display: block;
     position: absolute;

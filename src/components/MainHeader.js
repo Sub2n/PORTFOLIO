@@ -3,7 +3,6 @@ import subinVideo from '../imgs/subinVideo.mp4';
 
 const MainHeader = () => {
   const [height, setHeight] = useState(window.innerHeight);
-  // const [active, setActive] = useState(false);
   const Video = useRef(null);
   const filter = 'win16|win32|win64|mac|macintel';
 
@@ -12,10 +11,6 @@ const MainHeader = () => {
       const platform = navigator.platform.toLowerCase();
       if (filter.indexOf(platform) < 0) {
         Video.current.classList.add('mobile');
-      }
-      if (platform === 'mac' || platform === 'macintel') {
-        Video.current.style.width = '3000px';
-        Video.current.style.height = '2000px';
       }
     }
   }, [Video]);
@@ -47,8 +42,14 @@ const MainHeader = () => {
           </div>
         </div>
         <div className="header-background" style={{ height }}>
-          <video autoPlay muted loop id="myVideo" className="mvclip">
-            <source src={subinVideo} type="video/mp4" />>
+          <video
+            autoPlay
+            muted
+            loop
+            id="myVideo"
+            className="mvclip"
+            ref={Video}>
+            <source src={subinVideo} type="video/mp4" />
           </video>
           {/* <iframe
             id="mvclip"
