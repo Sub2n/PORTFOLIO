@@ -40,7 +40,7 @@ const Projects = [
     img: IWAM,
     smallImg: IWAM_s,
     url: 'https://devpost.com/software/iwam',
-    git: 'https://github.com/Sub2n/Fastcampus-Student-Managing'
+    git: 'https://github.com/Sub2n/Fastcampus-Student-Managing/tree/develop'
   },
   {
     title: 'COMMING SOON!',

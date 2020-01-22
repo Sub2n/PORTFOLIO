@@ -5279,9 +5279,6 @@ align-items: center;
   overflow: hidden;
 }
 
-/* .full-height {
-  height: 100vh !important
-} */
 
 #header h2 {
   font-size: 3em
@@ -6276,6 +6273,7 @@ body#not_found .rocket .steam {
   .rotate-words {
     min-height: 28px;
     min-width: 166px;
+    text-indent: 0px;
   }
    .intro h3 {
      font-size: 1.8em;
@@ -6328,7 +6326,7 @@ body#not_found .rocket .steam {
 }
 
 body.page-loaded {
-  min-width: 480px;
+  min-width: 360px;
 }
 
 .subject {
@@ -6404,8 +6402,8 @@ body.page-loaded {
   border-radius: 50%;
   border: 5px solid #fff;
   font-family: Oswald;
-  font-weight: 400;
-  font-size: 11px;
+  font-weight: 600;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
@@ -6635,6 +6633,7 @@ a.contact #contactLink:hover
 #service_content .image-box {
   overflow: hidden;
 }
+
 
 #service_content img:hover {
   transform: scale(1.1);

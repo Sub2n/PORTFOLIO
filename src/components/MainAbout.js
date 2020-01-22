@@ -42,6 +42,19 @@ const characters = [
 
 const MainAbout = () => {
   const [index, setIntex] = useState(0);
+  const [width, setWidth] = useState(window.outerWidth);
+
+  useEffect(() => {
+    setWidth(window.outerWidth);
+    window.addEventListener('resize', () => {
+      setWidth(window.outerWidth);
+    });
+    return () => {
+      window.removeEventListener('resize', () => {
+        setWidth(window.outerWidth);
+      });
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,10 +67,11 @@ const MainAbout = () => {
   return (
     <section id="about" className="wrap white-background">
       <div className="row margin100">
-        <div className="small-12 columns large-7 large-centered center intro">
+        <div className="small-12 columns medium-10 medium-centered  large-7 large-centered center intro">
           <h4 className="letter-spaced margin50">ABOUT ME</h4>
           <h3>
             안녕하세요, 저는
+            {width <= 480 ? <br /> : null}
             <span className="rotate-words">
               {characters.map((char, idx) => (
                 <span

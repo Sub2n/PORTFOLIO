@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
 const MainHeader = () => {
-  const [height, setHeight] = useState(window.innerHeight);
+  const [height, setHeight] = useState(window.outerHeight);
 
   useEffect(() => {
-    setHeight(window.innerHeight + 3);
+    setHeight(window.outerHeight + 3);
   }, []);
 
   return (
     <section id="header">
       <div className="header-container" style={{ height }}>
         <div className="header-background" style={{ height }}>
-          <div></div>
+          <div style={{ height }}></div>
         </div>
 
         <div className="header-text middle-container">
