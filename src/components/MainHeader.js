@@ -13,8 +13,8 @@ const MainHeader = () => {
         Video.current.classList.add('mobile');
       }
       if (platform === 'mac' || platform === 'macintel') {
-        Video.current.style.width = '2880px';
-        Video.current.style.height = '1800px';
+        Video.current.style.width = '3000px';
+        Video.current.style.height = '2000px';
       }
     }
   }, [Video]);
