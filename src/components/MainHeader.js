@@ -8,8 +8,13 @@ const MainHeader = () => {
 
   useEffect(() => {
     if (navigator.platform) {
-      if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+      const platform = navigator.platform.toLowerCase();
+      if (filter.indexOf(platform) < 0) {
         Video.current.classList.add('mobile');
+      }
+      if (platform === 'mac' || platform === 'macintel') {
+        Video.current.style.width = '2880px';
+        Video.current.style.height = '1800px';
       }
     }
   }, [Video]);
