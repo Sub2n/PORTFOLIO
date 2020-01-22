@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const MainHeader = () => {
-  const [height, setHeight] = useState(window.outerHeight);
+  const [height, setHeight] = useState(window.innerHeight);
 
   useEffect(() => {
-    setHeight(window.outerHeight + 3);
+    setHeight(window.innerHeight + 3);
   }, []);
 
   return (
