@@ -5338,7 +5338,7 @@ align-items: center;
   text-align: center;
   background-image: url('../src/imgs/smileSubin.png');
   background-repeat: no-repeat;
-  background-size: 120vw 100vh;
+  background-size: auto 100vh;
 }
 
 .header-background .mvclip.mobile,

@@ -58,7 +58,7 @@ const MainStrength = () => {
       <div className="margin50 small-wrap">
         <div className="row">
           <div className="small-12 columns">
-            <ul className="small-block-grid-1 medium-block-grid-2 large-block-grid-4 appear appeared">
+            <ul className="small-block-grid-2 medium-block-grid-2 large-block-grid-4 appear appeared">
               {strengths.map(({ title, id, src, active }) => (
                 <li key={title} className="center strengths">
                   <span
