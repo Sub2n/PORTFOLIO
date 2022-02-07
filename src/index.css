@@ -6018,7 +6018,7 @@ footer a.inline-block:hover .diagonal {
 body#not_found {
   /* background-image: url(../imgs/404.jpg); */
   background-size: cover;
-  position: reltaive
+  position: reltaive;
 }
 
 body#not_found h1 {
@@ -6413,6 +6413,41 @@ body.page-loaded {
   line-height: 58px;
   text-align: center;
   background: #88c4fc;
+  display: block;
+  z-index: 120;
+  color: #fff;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.event.now:before {
+  border-right-color: #edf1f3;
+  border-width: 15px;
+  margin-top: -140px;
+}
+
+.event.now:after {
+  border-right-color: #fff;
+  border-width: 10px;
+  margin-top: -135px;
+}
+
+.event.career .date {
+  background: #fcbc88;
+}
+
+.event.now .date {
+  position: absolute;
+  top: 45%;
+  margin-top: -140px;
+  left: -106px;
+  width: 68px;
+  line-height: 58px;
+  text-align: center;
   display: block;
   z-index: 120;
   color: #fff;

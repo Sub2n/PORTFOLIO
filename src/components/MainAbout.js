@@ -33,15 +33,15 @@ const computerEngineeringSkills = [
 ];
 
 const characters = [
-  '자바스크립트를 사랑하는',
-  '개발이 재미있는',
+  '소통하는',
+  '개발이 즐거운',
   'UX를 생각하는',
   '운동을 좋아하고',
-  '풀스택을 지향하는'
+  '지속적으로 성장하고 싶은'
 ];
 
 const MainAbout = () => {
-  const [index, setIntex] = useState(0);
+  const [index, setIndex] = useState(0);
   const [width, setWidth] = useState(window.outerWidth);
 
   useEffect(() => {
@@ -58,8 +58,8 @@ const MainAbout = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (index >= characters.length - 1) setIntex(0);
-      else setIntex(() => index + 1);
+      if (index >= characters.length - 1) setIndex(0);
+      else setIndex(() => index + 1);
     }, 3000);
     return () => clearInterval(interval);
   }, [index]);
@@ -71,7 +71,7 @@ const MainAbout = () => {
           <h4 className="letter-spaced margin50">ABOUT ME</h4>
           <h3>
             안녕하세요, 저는
-            {width <= 480 ? <br /> : null}
+            {width <= 480 ? <br/> : null}
             <span className="rotate-words">
               {characters.map((char, idx) => (
                 <span
@@ -81,14 +81,48 @@ const MainAbout = () => {
                 </span>
               ))}
             </span>
-            <br />
+            <br/>
             프론트엔드 개발자입니다.
-            <br />
-            사용하기 좋은 웹을 만들고 싶어 반응형 웹, PWA 등에 관심을 가지고
-            있습니다.
-            <br />
+            <br/>
+            사용하기 좋은 웹을 만들고 싶어 반응형 웹, 접근성에 관심을 가지고 있습니다.
+            <br/>
             꾸준히 노력하고 발전하겠습니다.
           </h3>
+        </div>
+      </div>
+      <div className="margin50 small-wrap">
+        <div className="row">
+          <h4 className="subject letter-spaced margin50 paddingLeft">
+            <span>CAREER</span>
+          </h4>
+          <div className="columns">
+            <div className="timeline">
+              <div className="event career now">
+                <span className="date">NOW</span>
+                <h4>AIMMO Frontend 개발</h4>
+                <p>
+                  <strong>CBT 서비스 종료 대응</strong><br/>
+                  개발 환경: Angular<br/>
+                  - 기존 기능 이관 및 개선 작업
+                </p>
+                <p>
+                  <strong>인스턴스 썸네일 뷰어 개발</strong><br/>
+                  개발 환경: Angular<br/>
+                  - 이미지 최적화 (createObjectURL 사용)
+                </p>
+                <p>
+                  <strong>AIMMO Labelers/백오피스 개발</strong><br/>
+                  - 플랫폼 사이트 신규 개발 <br/>
+                  - 복잡한 권한 체계 구현 <br/>
+                  - 운영 및 개선 업무
+                </p>
+              </div>
+              <div className="event career">
+                <span className="date">2020.04</span>
+                <h4>AIMMO 입사</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="margin50 small-wrap">
@@ -124,7 +158,7 @@ const MainAbout = () => {
           </div>
         </div>
       </div>
-      <SkillBox subject="Front-End" skills={frontendSkills} />
+      <SkillBox subject="Front-End" skills={frontendSkills}/>
       <SkillBox
         subject="Computer Engineering"
         skills={computerEngineeringSkills}

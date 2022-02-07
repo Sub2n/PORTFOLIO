@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import subinVideo from '../imgs/subinVideo.mp4';
 
 const MainHeader = () => {
@@ -30,7 +30,7 @@ const MainHeader = () => {
           <div className="middle">
             <h2 className="margin100 letter-spaced">
               SUBIN
-              <br />
+              <br/>
               FRONTEND DEVELOPER
             </h2>
             <h6 className="alt-font">
@@ -49,7 +49,7 @@ const MainHeader = () => {
             id="myVideo"
             className="mvclip"
             ref={Video}>
-            <source src={subinVideo} type="video/mp4" />
+            <source src={subinVideo} type="video/mp4"/>
           </video>
           {/* <iframe
             id="mvclip"

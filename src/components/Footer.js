@@ -9,7 +9,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="center">
-        <p>© SUBIN PARK 2020. Made with React.</p>
+        <p>© SUBIN PARK 2022. Made with React.</p>
       </div>
     </footer>
   );

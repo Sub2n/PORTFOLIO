@@ -59,9 +59,6 @@ const Header = () => {
             <Link smooth to="#skills" className="dark" onClick={onClick}>
               SKILLS
             </Link>
-            <Link smooth to="#projects" className="dark" onClick={onClick}>
-              PROJECTS
-            </Link>
             <Link smooth to="#contact" className="dark" onClick={onClick}>
               CONTACT
             </Link>

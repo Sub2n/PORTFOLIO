@@ -3,8 +3,8 @@ import skillBackground from '../imgs/skill_background.jpg';
 
 const skills = [
   { text: 'JavaScript', per: 90 },
-  { text: 'TypeScript', per: 75 },
-  { text: 'HTML5', per: 74 },
+  { text: 'TypeScript', per: 90 },
+  { text: 'HTML5', per: 80 },
   { text: 'CSS3', per: 72 },
   { text: 'Angular', per: 80 },
   { text: 'React', per: 60 },
@@ -65,15 +65,15 @@ const MainSkills = () => {
               <span className="myf-display"></span>
             </div>
             <p>
-              Angular 프레임워크와 React 라이브러리를 사용하여 웹 애플리케이션을
-              개발합니다. RESTful Open API를 사용해 화면에 지도나 동영상 등을
-              보여줄 수 있습니다 (e.g. Google이나 카카오의 맵 API, Youtube API
-              등).자바스크립트와 CSS로 애니메이션 효과를 주어 부드럽고 깔끔한
-              사용자 경험을 제공하고자 노력합니다.
+              Angular 프레임워크로 SPA 개발
               <br />
-              소프트웨어 공학 수업을 수강해 MVC 디자인 패턴 등을 이해하고
-              있습니다. 또한 프로젝트 설계의 중요성을 알고 많은 시간을
-              투자합니다.
+              신규 웹 사이트 개발 및 운영을 통한 유지보수 경험
+              <br />
+              복잡한 비동기 문제를 RxJS로 해결
+              <br />
+              React 개인 프로젝트 경험
+              {/*Experienced SPA Development using Angular Framework.*/}
+              {/*Solved complicated async problems with RxJS.*/}
             </p>
           </div>
         </div>
